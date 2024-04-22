@@ -1,0 +1,6 @@
+# Ignore PDF files
+*.pdf
+*.zip
+*.tar.gz
+*.csv
+*.xls
