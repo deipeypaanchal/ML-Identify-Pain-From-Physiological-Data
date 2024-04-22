@@ -13,7 +13,7 @@ def PrintEvalMetrics(pred, indices, y,  data_type, fold_index):
     precision = precision_score(ground_truth_data, final_preds, average = 'macro')
     recall = recall_score(ground_truth_data, final_preds, average = 'macro')
     accuracy = accuracy_score(ground_truth_data, final_preds)
-    new_dir = 'Final_Results_2/'
+    new_dir = 'Results_10Folds/'
     os.makedirs(new_dir, exist_ok=True)
     file_name = data_type + ".txt"
     try:

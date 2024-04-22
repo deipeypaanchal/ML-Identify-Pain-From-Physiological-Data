@@ -18,7 +18,7 @@ def evaluate(X, y, data_type, subjects):
     avg_recall = np.mean((recall_scores), axis=0)
     avg_accuracy = np.mean((accuracy_scores), axis=0)
 
-    new_dir = 'Final_Results/'
+    new_dir = 'Results_Average/'
     os.makedirs(new_dir, exist_ok=True)
     file_name = data_type + ".txt"
     try:
