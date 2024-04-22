@@ -1,10 +1,11 @@
 # This script is the entry point of the program. It takes command line arguments, loads data from a file, computes features, and evaluates the model.
 # Usage: python Project2.py <data_type> <data_file>
 
-import sys                                          # Importing sys to use command line arguments
-from handle_csv_file import load_data               # Importing load_data function from handle_csv_file module
-from compute import compute_features                # Importing compute_features function from compute module
-from evaluation import evaluate                     # Importing evaluate function from evaluation module
+import sys                                          # Importing sys to use command line arguments to get data type and data file
+from handle_csv_file import load_data               # Importing load_data function from handle_csv_file module to load data from a file
+from compute import compute_features                # Importing compute_features function from compute module to compute features 
+from evaluation import evaluate                     # Importing evaluate function from evaluation module to evaluate the model
+from plot import generate_boxplot                   # Importing generate_boxplot function from plot module to generate boxplot
 
 # Main function
 def main():
@@ -35,8 +36,9 @@ def main():
     features, labels, subjects = compute_features(data, data_type)
     # Evaluate the model using features, labels, data type, and subjects
     evaluate(features, labels, data_type, subjects)
+    # Generate boxplot for the features data
+    # generate_boxplot(features)
 
 # Call main function if script is executed
 if __name__ == "__main__":
     main()
-    # box_plot(features)
