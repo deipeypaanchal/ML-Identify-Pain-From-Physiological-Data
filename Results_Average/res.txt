@@ -1,0 +1,6 @@
+Average Scores 
+	Confusion matrix: [[3.2 2.9]
+ [2.8 3.1]]
+	Precision: 0.5301190476190476
+	Recall: 0.525
+	Accuracy: 0.525
