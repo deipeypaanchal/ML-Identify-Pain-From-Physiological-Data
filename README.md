@@ -11,3 +11,7 @@ It is a system that can identify (i.e. classify) pain from physiological data th
 - Matplotlib
 - os
 - sys
+
+# To run the project
+
+- with venv already included: .venv/bin/python3 Project2.py <Data_Type> <Data_File>
