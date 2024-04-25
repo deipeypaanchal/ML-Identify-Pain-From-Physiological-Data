@@ -2,7 +2,6 @@
 
 import csv                      # Import the csv module to read csv files
 
-
 def load_data(file_path):
     """
     Load data from a csv file.
