@@ -1,5 +1,4 @@
-*.pdf
-*.zip
+/Project2.pdf
 *.tar.gz
 *.csv
 *.xls
